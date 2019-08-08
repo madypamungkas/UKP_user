@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Menu.DaftarKonsul">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/gradStop">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_arrow_back_black_32dp"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:paddingStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@string/font_medium"
+            android:paddingLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:text="Daftar Konsultasi"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="5dp"
+    app:cardBackgroundColor="@color/gradStop">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@string/font_medium"
+                android:text="Pendaftaran Konsultasi"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:id="@+id/check2"
+                    android:visibility="visible"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_menu_daftar"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@string/font_medium"
+                    android:text="Pilih Daftar Pelayanan\n Konsultasi Ditujukan"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_centerInParent="true">
+                <Button
+                    android:id="@+id/bt_daftarSaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="@string/button_daftarSaya"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/bt_daftarLain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_bgin"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/button_daftarLain"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+</android.support.v7.widget.CardView>
+</LinearLayout>

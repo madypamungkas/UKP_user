@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.DetailActivity.DetailChild">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/gradStop">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_close_black_32dp"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:paddingStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@string/font_medium"
+            android:paddingLeft="6dp"
+            android:text="Detail Konsultasi"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/gradStop"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardMaxElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@string/font_medium"
+                    android:text="Detail Klien Terdata"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="10dp"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Nama Psikolog"
+                                    android:layout_weight="1"
+                                    android:layout_marginVertical="5dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Tanggal Lahir"
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Jenis Kelamin "
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Anakke"
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Dari "
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text="Hubungan"
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:id="@+id/namaChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": Nama Psikolog"
+                                    android:layout_weight="1"
+                                    android:layout_marginVertical="5dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:id="@+id/ttlChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": 20 Tahun"
+                                    android:textColor="@color/white"
+                                    android:layout_marginVertical="5dp"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:id="@+id/pendidikanChild"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": Diri Sendiri"
+                                    android:layout_marginVertical="5dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+
+                                    android:id="@+id/jenisKelaminChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.6"
+                                    android:layout_marginVertical="5dp"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": Perempuan"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+
+                                    android:id="@+id/anakkeChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.6"
+                                    android:layout_marginVertical="5dp"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": 1"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+
+                                    android:id="@+id/jumlahSaudara"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.6"
+                                    android:layout_marginVertical="5dp"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": 2 Bersaudara"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                                <TextView
+
+                                    android:id="@+id/hubunganChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.6"
+                                    android:layout_marginVertical="5dp"
+                                    android:fontFamily="@string/font_medium"
+                                    android:text=": Hubungan"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        android:id="@+id/close_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_bgin"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Tutup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/edit_konsul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/close_detail"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Ajukan Perubahan Konsultasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.komsi.user_interface">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_menu_daftar"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_menu_daftar"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/account_kit_client_token" />
+
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+        <activity android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/ak_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.LoginKlien.LoginActivity" />
+        <activity android:name=".Activities.RegisterUser.DaftarActivity" />
+        <activity android:name=".Activities.Dashboard.Dashboard" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Dashboard.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.bin.TentangAplikasi" />
+        <activity android:name=".Activities.Menu.DaftarKonsul" />
+        <activity android:name=".Activities.Menu.JadwalKonsul" />
+        <activity android:name=".Activities.bin.LayananKonsul" />
+        <activity android:name=".Activities.Menu.BiodataUser" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_Saya" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_Lain" />
+        <activity android:name=".Activities.EditActivity.EditBiodataUser" />
+        <activity android:name=".Activities.password.LupaPassword" />
+        <activity android:name=".Activities.Notifikasi" />
+        <activity android:name=".Activities.bin.RiwayatKonsul" />
+        <activity android:name=".Activities.DetailActivity.DetailKonsultasi" />
+        <activity android:name=".Activities.RegisterUser.DaftarActivity_konfirm" />
+        <activity android:name=".Activities.Menu.Layanan" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_pilihLayanan2" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_pilihJadwal" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_Selesai" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_konfirm" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_keluhan" />
+        <activity android:name=".Activities.password.GantiPassword" />
+        <activity android:name=".Activities.EditActivity.EditAkun" />
+        <activity android:name=".Activities.LoadData.Loading" />
+        <activity android:name=".Activities.DaftarKonsultasi.DaftarKonsul_pilihPsikolog" />
+        <activity android:name=".Activities.DetailActivity.DetailLayanan" />
+        <activity android:name=".Activities.DetailActivity.DetailPsikolog" />
+        <activity android:name=".Activities.DaftarKonsultasi.Child_Klien" />
+        <activity android:name=".Activities.bin.DaftarKonsul_OrangLain" />
+        <activity android:name=".Activities.DetailActivity.DetailChild" />
+        <activity android:name=".Activities.JadwalChild.JadwalChild" />
+        <activity android:name=".Activities.JadwalChild.RiwayatChild" />
+        <activity android:name=".Activities.EditActivity.UploadFoto" />
+
+        <service android:name=".FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".AlarmTask.AlarmTask"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmTask.TimerJadwalTask"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Activities.VerifEmail.SendEmailVerif" />
+        <activity android:name=".Activities.Menu.KonfirmasiJadwal" />
+        <activity android:name=".Activities.JadwalChild.KonfirmasiChild" />
+        <activity android:name=".Activities.RegisterUser.TermOfServices"></activity>
+    </application>
+
+</manifest>
